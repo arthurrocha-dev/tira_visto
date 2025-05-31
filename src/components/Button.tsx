@@ -10,13 +10,19 @@ export const Button = ({ type, children }: ButtonProps) => {
   const getButtonColor = () => {
     switch (type) {
       case "primary":
-        setbuttonStyle("flex items-center gap-2 bg-primary text-black");
+        setbuttonStyle(
+          "flex items-center justify-center gap-2 bg-primary text-black"
+        );
         return;
       case "secondary":
-        setbuttonStyle("flex items-center gap-2 bg-secondary text-white");
+        setbuttonStyle(
+          "flex items-center justify-center gap-2 bg-secondary text-white"
+        );
         return;
       default:
-        setbuttonStyle("flex items-center gap-2 bg-primary text-black");
+        setbuttonStyle(
+          "flex items-center justify-center gap-2 bg-primary text-black"
+        );
         return;
     }
   };

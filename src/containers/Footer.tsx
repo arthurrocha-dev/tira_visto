@@ -4,19 +4,22 @@ import { Button } from "../components/Button";
 export const Footer = () => {
   return (
     <footer>
-      <div className="px-[20px] md:px-[20px] lg:px-[60px] py-[70px]">
-        <div className="flex items-center justify-between mb-[40px]">
-          <div className="w-2/5">
-            <h4 className="font-bold text-4xl mb-3">Está com alguma dúvida?</h4>
+      <div className="px-[20px] md:px-[20px] lg:px-[60px] py-[20px] md:py-[70px]">
+        <div className="flex flex-col md:flex-row items-center justify-between mb-[40px]">
+          <div className="w-full md:w-2/5">
+            <h4 className="font-bold text-2xl md:text-4xl mb-3">
+              Está com alguma dúvida?
+            </h4>
             <p className="mb-[40px]">
               Entre em contato através do nosso canal direto ao cliente através
               do botão abaixo
             </p>
+
             <Button type="secondary">Central de Atendimento</Button>
           </div>
-          <div className="w-2/5">
+          <div className="w-full md:w-2/5">
             <a href="">
-              <div className="flex items-center justify-between text-4xl">
+              <div className="flex items-center justify-between text-xl md:text-4xl mt-3 md:mt-auto">
                 Receba novidades
                 <GoArrowUpRight />
               </div>
@@ -25,29 +28,41 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="flex items-end justify-between ">
-          <div className="w-2/5">
+        <div className="flex flex-col md:flex-row items-end justify-between ">
+          <div className="w-full md:w-2/5">
             <div>
               <p className="font-bold mb-5">Siga em nossa redes:</p>
 
-              <div className="flex gap-5">
-                <a href="" className="border rounded-full px-[20px] py-[10px]">
+              <div className="flex flex-col md:flex-row gap-5">
+                <a
+                  href=""
+                  className="border rounded-full px-[20px] py-[10px] text-center"
+                >
                   Instagram
                 </a>
-                <a href="" className="border rounded-full px-[20px] py-[10px]">
-                  Instagram
+                <a
+                  href=""
+                  className="border rounded-full px-[20px] py-[10px] text-center"
+                >
+                  x
                 </a>
-                <a href="" className="border rounded-full px-[20px] py-[10px]">
-                  Instagram
+                <a
+                  href=""
+                  className="border rounded-full px-[20px] py-[10px] text-center"
+                >
+                  Facebook
                 </a>
-                <a href="" className="border rounded-full px-[20px] py-[10px]">
-                  Instagram
+                <a
+                  href=""
+                  className="border rounded-full px-[20px] py-[10px] text-center"
+                >
+                  Youtube
                 </a>
               </div>
             </div>
           </div>
 
-          <div className="flex w-2/5 justify-evenly">
+          <div className="flex flex-col md:flex-row w-full md:w-2/5 md:justify-evenly mt-3 md:mt-auto">
             <div>
               <p className="font-bold mb-3">Empresa</p>
               <ul>

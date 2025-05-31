@@ -28,24 +28,24 @@ export const Home = () => {
       <div className="flex-1">
         <Header />
         <div className="px-[20px] md:px-[20px] lg:px-[60px]">
-          <div className="flex items-center md:block">
-            <div className="block md:hidden w-3/4 overflow-hidden rounded-[24px] bg-primary">
+          <div className="flex flex-col md:flex-row items-center md:block">
+            <div>
+              <h2 className="pb-5 md:p-0 text-2xl lg:text-5xl font-bold ">
+                Tire seu Visto conosco e não tenha nenhuma surpresa negativa!
+              </h2>
+            </div>
+            <div className="block md:hidden w-full md:w-3/4 overflow-hidden rounded-[24px] bg-primary">
               <img
                 src={Banner}
                 alt="Banner da Home contendo a imagem de um corredor com um chafariz no centro e ao fundo uma roda gigante"
-                className="h-full object-cover"
+                className="h-full w-full object-cover"
               />
-            </div>
-            <div>
-              <h2 className="p-5 md:p-0 text-2xl lg:text-5xl font-bold ">
-                Tire seu Visto conosco e não tenha nenhuma surpresa negativa!
-              </h2>
             </div>
           </div>
 
           <hr className="mt-4 mb-2 md:mt-[32px] md:mb-[60px] text-ligth-grey" />
 
-          <div className="flex gap-[20px] items-end">
+          <div className="flex flex-col md:flex-row gap-[20px] items-end">
             <div className="flex-2/3 p-[20px]">
               <p className="mb-[40px]">
                 Com uma equipe altamente treinada, nós temos todos os
@@ -57,9 +57,13 @@ export const Home = () => {
                 Saiba mais <FaArrowRightLong className="text-white" />
               </Button>
             </div>
-            <div className="flex-1/3">
+            <div className="w-full md:w-auto flex-1/3">
               <div className="overflow-hidden rounded-[16px]">
-                <img src={CleanShot} alt="Imagem ilustrativa do vídeos " />
+                <img
+                  src={CleanShot}
+                  alt="Imagem ilustrativa do vídeos "
+                  className="h-full w-full object-cover"
+                />
               </div>
               <div className="flex items-center justify-between mt-4">
                 <div>
@@ -100,7 +104,7 @@ export const Home = () => {
         <img
           src={Banner}
           alt="Banner da Home contendo a imagem de um corredor com um chafariz no centro e ao fundo uma roda gigante"
-          className="h-full object-cover"
+          className="h-full w-full object-cover"
         />
       </div>
     </section>

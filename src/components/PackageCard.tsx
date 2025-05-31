@@ -8,8 +8,8 @@ interface PackageCardProps {
 export const PackageCard = ({ data }: PackageCardProps) => {
   return (
     <Card
-      className="max-w-sm"
-      imgAlt="Meaningful alt text for an image that is not purely decorative"
+      className="max-w-full md:max-w-sm  text-sm md:text-md"
+      imgAlt={data.title}
       imgSrc={data.imageUrl}
     >
       <div className="flex items-center gap-2">
@@ -47,8 +47,8 @@ export const PackageCard = ({ data }: PackageCardProps) => {
       </div>
       <hr className="mt-4 mb-2 text-ligth-grey" />
 
-      <div className="flex items-center justify-between">
-        <div>
+      <div className="flex flex-col md:flex-row md:items-center justify-between">
+        <div className="mb-2 md:mb-auto">
           <p className="text-grey">A partir de</p>
           <p className="font-bold text-3xl">R$ {data.price}</p>
         </div>
