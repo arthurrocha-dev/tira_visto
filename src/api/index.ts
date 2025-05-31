@@ -1,3 +1,4 @@
 import DashAPI from "./dash";
+import PackageAPI from "./package";
 
-export { DashAPI };
+export { DashAPI, PackageAPI };
