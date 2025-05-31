@@ -5,8 +5,9 @@
 @theme {
   --color-primary: #f6c010;
   --color-secondary: #1b2543;
-  --color-white: #fefefe;
+  --color-white: #ffffff;
   --color-white-2: #f7f7f7;
-  --color-black: #000;
+  --color-black: #000000;
+  --color-grey: #8d8d8d;
   --color-ligth-grey: #e5e5e5;
 }

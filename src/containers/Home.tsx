@@ -13,8 +13,6 @@ export const Home = () => {
   const getDashData = async () => {
     try {
       const { data } = await DashAPI.getData();
-      console.log(data);
-
       setDashData(data);
     } catch (error) {
       console.error(error);
