@@ -1,54 +1,65 @@
-# React + TypeScript + Vite
+# Tira Visto
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Sobre
 
-Currently, two official plugins are available:
+Este projeto é a solução de um code challenge com o objetivo de desenvolver uma landing page para uma empresa fictícia chamada "Tira Visto".
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A proposta foca em boas práticas de desenvolvimento front-end moderno, utilizando tecnologias atuais para garantir performance, escalabilidade e organização do código.
 
-## Expanding the ESLint configuration
+Este projeto é apenas para fins educacionais e demonstrativos. Não deve ser utilizado para fins comerciais.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tecnologias Utilizadas
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- Vite
+
+  - React + TypeScript
+
+- TailwindCSS + Flowbite
+- Json-server (para simulação de API)
+
+## Requisitos
+
+- Node.js: ^22.14
+
+## Instalação
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/arthurrocha-dev/tira_visto.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Instale as dependências:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+yarn install
+# ou
+npm install
 ```
+
+## Execução do Projeto
+
+Inicie o ambiente de desenvolvimento:
+
+```bash
+yarn dev
+# ou
+npm run dev
+```
+
+Antes de executar o projeto, certifique-se de que as variáveis de ambiente estão devidamente preenchidas.
+
+## Projeto em Produção
+
+A aplicação está hospedada na Vercel e pode ser acessada pelo seguinte endereço:
+
+[https://tira-visto.vercel.app/](https://tira-visto.vercel.app/)
+
+## Autor
+
+**Arthur Rocha**
+
+- E-mail: [contato.arthurrochadev@gmail.com](mailto:contato.arthurrochadev@gmail.com)
+- Portfólio: [https://arthurrocha.dev](https://arthurrocha.dev)
+- GitHub: [https://github.com/arthurrocha-dev](https://github.com/arthurrocha-dev)
+- LinkedIn: [https://www.linkedin.com/in/arthurrocha-dev](https://www.linkedin.com/in/arthurrocha-dev)

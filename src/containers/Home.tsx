@@ -34,12 +34,28 @@ export const Home = () => {
                 Tire seu Visto conosco e não tenha nenhuma surpresa negativa!
               </h2>
             </div>
-            <div className="block md:hidden w-full md:w-3/4 overflow-hidden rounded-[24px] bg-primary">
+            <div className="block md:hidden w-full md:w-3/4 overflow-hidden rounded-[24px] relative">
+              <div className="py-4 px-7 absolute top-0 right-0">
+                <Button type="primary">Tirar meu visto agora!</Button>
+              </div>
+
               <img
                 src={Banner}
                 alt="Banner da Home contendo a imagem de um corredor com um chafariz no centro e ao fundo uma roda gigante"
                 className="h-full w-full object-cover"
               />
+
+              <div className="absolute w-full bg-gradient-to-t from-black to-transparent bottom-0 left-0 px-[20px] py-[20px]">
+                <div className="w-full">
+                  <h4 className="font-bold text-xl text-white mb-4">
+                    Realize o seu sonho com a ajuda da Tirar Visto!
+                  </h4>
+                  <p className="text-white">
+                    Com um serviço profissional, você não terá dor de cabeça
+                    para todo o processo do visto e entrevistas no consulado.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -100,12 +116,28 @@ export const Home = () => {
           </div>
         </div>
       </div>
-      <div className="flex-1 hidden md:block overflow-hidden rounded-[24px] my-[20px] mr-[20px]">
+      <div className="flex-1 hidden md:block overflow-hidden rounded-[24px] my-[20px] mr-[20px] relative">
+        <div className="py-4 px-7 absolute top-0 right-0">
+          <Button type="primary">Tirar meu visto agora!</Button>
+        </div>
+
         <img
           src={Banner}
           alt="Banner da Home contendo a imagem de um corredor com um chafariz no centro e ao fundo uma roda gigante"
           className="h-full w-full object-cover"
         />
+
+        <div className="absolute w-full bg-gradient-to-t from-black to-transparent bottom-0 left-0 px-[60px] py-[60px]">
+          <div className="w-[60%]">
+            <h4 className="font-bold text-4xl text-white mb-4">
+              Realize o seu sonho com a ajuda da Tirar Visto!
+            </h4>
+            <p className="text-white">
+              Com um serviço profissional, você não terá dor de cabeça para todo
+              o processo do visto e entrevistas no consulado.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
