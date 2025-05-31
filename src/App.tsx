@@ -1,10 +1,13 @@
 import "./App.css";
 import { ThemeConfig } from "flowbite-react";
-import { Home } from "./containers";
-import { Banner } from "./containers/Banner";
-import { HeroSection } from "./containers/HeroSection";
-import { Footer } from "./containers/Footer";
-import { Packages } from "./containers/Packages";
+import {
+  Banner,
+  Destination,
+  Footer,
+  HeroSection,
+  Home,
+  Packages,
+} from "./containers";
 
 function App() {
   return (
@@ -13,6 +16,7 @@ function App() {
       <Home />
       <Banner />
       <HeroSection />
+      <Destination />
       <Packages />
       <Footer />
     </>
